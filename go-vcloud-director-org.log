@@ -1,0 +1,1381 @@
+2021/11/09 14:24:35 ### WILL SKIP THE FOLLOWING TAGS: [ovf:License]
+2021/11/09 14:24:35 --------------------------------------------------------------------------------
+2021/11/09 14:24:35 Request caller: govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:35 GET https://pcdpre.beta.cloud.bt.com/api/versions
+2021/11/09 14:24:35 --------------------------------------------------------------------------------
+2021/11/09 14:24:35 Req header:
+2021/11/09 14:24:35 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:35 ################################################################################
+2021/11/09 14:24:35 Response caller vcd.ProviderAuthenticate-->govcd.(*VCDClient).GetAuthResponse-->govcd.(*VCDClient).vcdloginurl-->govcd.(*Client).validateAPIVersion-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:35 Response status 200 OK
+2021/11/09 14:24:35 ################################################################################
+2021/11/09 14:24:35 Response header:
+2021/11/09 14:24:35 	Content-Type: [text/xml]
+2021/11/09 14:24:35 	X-Vmware-Vcloud-Request-Execution-Time: [3]
+2021/11/09 14:24:35 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:35 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:35 	Content-Length: [2027]
+2021/11/09 14:24:35 	Date: [Tue, 09 Nov 2021 14:24:35 GMT]
+2021/11/09 14:24:35 	X-Vmware-Vcloud-Request-Id: [0a2bb458-aa13-4f9d-b56a-25aa919b9320]
+2021/11/09 14:24:35 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:35 Response text: [2027]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SupportedVersions xmlns="http://www.vmware.com/vcloud/versions" xmlns:ns2="http://www.vmware.com/vcloud/v1.5" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1">
+    <VersionInfo deprecated="true">
+        <Version>27.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>28.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>29.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>30.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>31.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>32.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>33.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>34.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <SchemaRoot>https://pcdpre.beta.cloud.bt.com/api/v1.5/schema/</SchemaRoot>
+</SupportedVersions>
+
+2021/11/09 14:24:35 [DEBUG] supported API versions : 27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0
+2021/11/09 14:24:35 [TRACE] API version 27.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] API version 28.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] API version 29.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] API version 30.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] API version 31.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] API version 32.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:35 [INFO] API version 33.0.0 satisfies constraints '= 33.0'
+2021/11/09 14:24:35 [TRACE] Connecting to VCD using cloudapi
+2021/11/09 14:24:35 [TRACE] URL https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/sessions
+2021/11/09 14:24:35 --------------------------------------------------------------------------------
+2021/11/09 14:24:35 Request caller: govcd.(*VCDClient).Authenticate-->vcd.ProviderAuthenticate-->govcd.(*VCDClient).GetAuthResponse-->govcd.(*VCDClient).vcdCloudApiAuthorize-->govcd.(*Client).newRequest
+2021/11/09 14:24:35 POST https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/sessions
+2021/11/09 14:24:35 --------------------------------------------------------------------------------
+2021/11/09 14:24:35 Req header:
+2021/11/09 14:24:35 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:37 ### WILL SKIP THE FOLLOWING TAGS: [ovf:License]
+2021/11/09 14:24:37 --------------------------------------------------------------------------------
+2021/11/09 14:24:37 Request caller: govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:37 GET https://pcdpre.beta.cloud.bt.com/api/versions
+2021/11/09 14:24:37 --------------------------------------------------------------------------------
+2021/11/09 14:24:37 Req header:
+2021/11/09 14:24:37 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:37 ################################################################################
+2021/11/09 14:24:37 Response caller vcd.ProviderAuthenticate-->govcd.(*VCDClient).GetAuthResponse-->govcd.(*VCDClient).vcdloginurl-->govcd.(*Client).validateAPIVersion-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).vcdFetchSupportedVersions-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:37 Response status 200 OK
+2021/11/09 14:24:37 ################################################################################
+2021/11/09 14:24:37 Response header:
+2021/11/09 14:24:37 	Content-Type: [text/xml]
+2021/11/09 14:24:37 	X-Vmware-Vcloud-Request-Execution-Time: [1]
+2021/11/09 14:24:37 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:37 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:37 	Content-Length: [2027]
+2021/11/09 14:24:37 	Date: [Tue, 09 Nov 2021 14:24:37 GMT]
+2021/11/09 14:24:37 	X-Vmware-Vcloud-Request-Id: [0c0b71e0-ea24-4661-a5e5-ccf9e7f29f39]
+2021/11/09 14:24:37 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:37 Response text: [2027]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SupportedVersions xmlns="http://www.vmware.com/vcloud/versions" xmlns:ns2="http://www.vmware.com/vcloud/v1.5" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1">
+    <VersionInfo deprecated="true">
+        <Version>27.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>28.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>29.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="true">
+        <Version>30.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>31.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>32.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>33.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <VersionInfo deprecated="false">
+        <Version>34.0</Version>
+        <LoginUrl>https://pcdpre.beta.cloud.bt.com/api/sessions</LoginUrl>
+    </VersionInfo>
+    <SchemaRoot>https://pcdpre.beta.cloud.bt.com/api/v1.5/schema/</SchemaRoot>
+</SupportedVersions>
+
+2021/11/09 14:24:37 [DEBUG] supported API versions : 27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0
+2021/11/09 14:24:37 [TRACE] API version 27.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] API version 28.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] API version 29.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] API version 30.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] API version 31.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] API version 32.0.0 does not satisfy constraints '= 33.0'
+2021/11/09 14:24:37 [INFO] API version 33.0.0 satisfies constraints '= 33.0'
+2021/11/09 14:24:37 [TRACE] Connecting to VCD using cloudapi
+2021/11/09 14:24:37 [TRACE] URL https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/sessions
+2021/11/09 14:24:37 --------------------------------------------------------------------------------
+2021/11/09 14:24:37 Request caller: govcd.(*VCDClient).Authenticate-->vcd.ProviderAuthenticate-->govcd.(*VCDClient).GetAuthResponse-->govcd.(*VCDClient).vcdCloudApiAuthorize-->govcd.(*Client).newRequest
+2021/11/09 14:24:37 POST https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/sessions
+2021/11/09 14:24:37 --------------------------------------------------------------------------------
+2021/11/09 14:24:37 Req header:
+2021/11/09 14:24:37 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.getOrgHREF-->govcd.getOrgHREF-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/org
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response caller vcd.getVapp-->vcd.(*VCDClient).GetOrgAndVdcFromResource-->vcd.(*VCDClient).GetOrgAndVdc-->govcd.(*VCDClient).GetOrgByName-->govcd.getOrgHREF-->govcd.getOrgHREF-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:38 Response status 200 OK
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Id: [13c1c18e-4137-4f65-adac-f305e877662c]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:38 	Content-Type: [application/vnd.vmware.vcloud.orglist+xml;version=33.0]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Execution-Time: [9]
+2021/11/09 14:24:38 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:38 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:38 	Content-Length: [891]
+2021/11/09 14:24:38 	Date: [Tue, 09 Nov 2021 14:24:38 GMT]
+2021/11/09 14:24:38 Response text: [891]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrgList xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" href="https://pcdpre.beta.cloud.bt.com/api/org/" type="application/vnd.vmware.vcloud.orgList+xml">
+    <Org href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" name="BT-Private-Cloud" type="application/vnd.vmware.vcloud.org+xml"/>
+</OrgList>
+
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response caller vcd.resourceVcdVappFirewallRulesUpdate-->vcd.getVapp-->vcd.(*VCDClient).GetOrgAndVdcFromResource-->vcd.(*VCDClient).GetOrgAndVdc-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:38 Response status 200 OK
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response header:
+2021/11/09 14:24:38 	Content-Type: [application/vnd.vmware.vcloud.org+xml;version=33.0]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Execution-Time: [18]
+2021/11/09 14:24:38 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:38 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:38 	Content-Length: [6333]
+2021/11/09 14:24:38 	Date: [Tue, 09 Nov 2021 14:24:38 GMT]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Id: [2b95bd0f-e272-4d64-8bcf-c3894d2a3284]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:38 Response text: [6333]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Org xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" name="BT-Private-Cloud" id="urn:vcloud:org:9d5190b2-0d70-4834-93cc-a46d057b84cd" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" type="application/vnd.vmware.vcloud.org+xml">
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc" type="application/vnd.vmware.vcloud.query.records+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc" type="application/vnd.vmware.vcloud.query.records+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/tasksList/9d5190b2-0d70-4834-93cc-a46d057b84cd" type="application/vnd.vmware.vcloud.tasksList+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/tasksList/9d5190b2-0d70-4834-93cc-a46d057b84cd" type="application/vnd.vmware.vcloud.tasksList+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/admin/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/catalogs" type="application/vnd.vmware.admin.catalog+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/admin/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/catalogs" type="application/vnd.vmware.admin.catalog+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/query?type=catalog" type="application/vnd.vmware.vcloud.query.records+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/query?type=catalog" type="application/vnd.vmware.vcloud.query.records+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/supportedSystemsInfo/" type="application/vnd.vmware.vcloud.supportedSystemsInfo+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/supportedSystemsInfo/" type="application/vnd.vmware.vcloud.supportedSystemsInfo+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/hybrid" type="application/vnd.vmware.vcloud.hybridOrg+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/hybrid" type="application/vnd.vmware.vcloud.hybridOrg+json"/>
+    <Link rel="instantiate" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/action/instantiate" type="application/vnd.vmware.vcloud.instantiateVdcTemplateParams+xml"/>
+    <Link rel="instantiate" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/action/instantiate" type="application/vnd.vmware.vcloud.instantiateVdcTemplateParams+json"/>
+    <Link rel="rollup" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/vdcRollup" type="application/vnd.vmware.vcloud.orgVdcRollup+xml"/>
+    <Link rel="rollup" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/vdcRollup" type="application/vnd.vmware.vcloud.orgVdcRollup+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/admin/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" name="application/vnd.vmware.admin.organization+xml" type="application/vnd.vmware.admin.organization+xml"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/admin/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" name="application/vnd.vmware.admin.organization+xml" type="application/vnd.vmware.admin.organization+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/eed5da17-f855-4c60-a109-285fed38d3ec" name="MCMS_Routed_Network" type="application/vnd.vmware.vcloud.orgNetwork+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/eed5da17-f855-4c60-a109-285fed38d3ec" name="MCMS_Routed_Network" type="application/vnd.vmware.vcloud.orgNetwork+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" name="ORG_Routed_Network" type="application/vnd.vmware.vcloud.orgNetwork+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" name="ORG_Routed_Network" type="application/vnd.vmware.vcloud.orgNetwork+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/b06c74be-772d-42b5-bf11-99fbb19d82e4" name="ORG_Routed_Network_External_Services" type="application/vnd.vmware.vcloud.orgNetwork+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/network/b06c74be-772d-42b5-bf11-99fbb19d82e4" name="ORG_Routed_Network_External_Services" type="application/vnd.vmware.vcloud.orgNetwork+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+json"/>
+    <Link rel="metrics" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml"/>
+    <Link rel="metrics" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+json"/>
+    <Description>Contains Master OS images in its library. Do not Delete</Description>
+    <FullName>BT Private Cloud</FullName>
+</Org>
+
+2021/11/09 14:24:38 [DEBUG] queryOrgVdcList with filter map[string]string{"name":"BT Public Cloud", "org":"https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd", "orgName":"BT-Private-Cloud"}
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.(*Org).GetVDCByName-->govcd.(*Org).queryOrgVdcByName-->govcd.queryOrgVdcList-->govcd.(*Client).QueryWithNotEncodedParams-->govcd.(*Client).cumulativeQuery-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/query?&type=orgVdc&filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&filterEncoded=true
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response caller govcd.(*Org).GetVDCByName-->govcd.(*Org).queryOrgVdcByName-->govcd.queryOrgVdcList-->govcd.(*Client).QueryWithNotEncodedParams-->govcd.(*Client).cumulativeQuery-->govcd.(*Client).QueryWithNotEncodedParamsWithApiVersion-->govcd.getResult-->govcd.decodeBody
+2021/11/09 14:24:38 Response status 200 OK
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Execution-Time: [36]
+2021/11/09 14:24:38 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:38 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:38 	Content-Length: [2930]
+2021/11/09 14:24:38 	Date: [Tue, 09 Nov 2021 14:24:38 GMT]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Id: [05f2b98c-2bcf-4216-a9bc-3c7a4a72eef2]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:38 	Content-Type: [application/vnd.vmware.vcloud.query.records+xml;version=33.0]
+2021/11/09 14:24:38 Response text: [2930]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResultRecords xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" name="orgVdc" page="1" pageSize="25" total="1" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc&amp;page=1&amp;pageSize=25&amp;format=records&amp;filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&amp;filterEncoded=true" type="application/vnd.vmware.vcloud.query.records+xml">
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc&amp;page=1&amp;pageSize=25&amp;format=references&amp;filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&amp;filterEncoded=true" type="application/vnd.vmware.vcloud.query.references+xml"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc&amp;page=1&amp;pageSize=25&amp;format=references&amp;filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&amp;filterEncoded=true" type="application/vnd.vmware.vcloud.query.references+json"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc&amp;page=1&amp;pageSize=25&amp;format=idrecords&amp;filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&amp;filterEncoded=true" type="application/vnd.vmware.vcloud.query.idrecords+xml"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/query?type=orgVdc&amp;page=1&amp;pageSize=25&amp;format=idrecords&amp;filter=orgName==BT-Private-Cloud;name==BT+Public+Cloud&amp;filterEncoded=true" type="application/vnd.vmware.vcloud.query.idrecords+json"/>
+    <OrgVdcRecord cpuAllocationMhz="0" cpuLimitMhz="0" cpuReservedMhz="0" cpuUsedMhz="65100" isBusy="false" isEnabled="true" memoryAllocationMB="0" memoryLimitMB="98304" memoryReservedMB="0" memoryUsedMB="65536" name="BT Public Cloud" numberOfDeployedUnmanagedVApps="18" numberOfDeployedVApps="21" numberOfDisks="0" numberOfMedia="39" numberOfRunningVMs="14" numberOfStorageProfiles="1" numberOfUnmanagedVApps="20" numberOfVAppTemplates="0" numberOfVApps="23" numberOfVMs="21" orgName="BT-Private-Cloud" status="READY" storageLimitMB="0" storageUsedMB="2547831" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" cpuOverheadMhz="0" pvdcHardwareVersion="14" allocationModel="1" networkPool="https://pcdpre.beta.cloud.bt.com/api/admin/extension/networkPool/0da2d5eb-b215-4e43-b4a5-656387e737e9" storageOverheadMB="0" memoryOverheadMB="995"/>
+</QueryResultRecords>
+
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.(*Org).GetVDCByHref-->govcd.(*Org).GetVDCByHref-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response caller vcd.getVapp-->vcd.(*VCDClient).GetOrgAndVdcFromResource-->vcd.(*VCDClient).GetOrgAndVdc-->govcd.(*Org).GetVDCByName-->govcd.(*Org).GetVDCByHref-->govcd.(*Org).GetVDCByHref-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:38 Response status 200 OK
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Execution-Time: [56]
+2021/11/09 14:24:38 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:38 	Date: [Tue, 09 Nov 2021 14:24:38 GMT]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Id: [8cf95a2d-f452-40e5-a932-19394926a5ad]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:38 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:38 	Content-Type: [application/vnd.vmware.vcloud.vdc+xml;version=33.0]
+2021/11/09 14:24:38 Response text: [33047]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Vdc xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" isLegacyType="false" status="1" name="BT Public Cloud" id="urn:vcloud:vdc:d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+xml">
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" type="application/vnd.vmware.vcloud.org+xml"/>
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/org/9d5190b2-0d70-4834-93cc-a46d057b84cd" type="application/vnd.vmware.vcloud.org+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+xml"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/uploadVAppTemplate" type="application/vnd.vmware.vcloud.uploadVAppTemplateParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/uploadVAppTemplate" type="application/vnd.vmware.vcloud.uploadVAppTemplateParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/media" type="application/vnd.vmware.vcloud.media+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/media" type="application/vnd.vmware.vcloud.media+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateOvf" type="application/vnd.vmware.vcloud.instantiateOvfParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateOvf" type="application/vnd.vmware.vcloud.instantiateOvfParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateVAppTemplate" type="application/vnd.vmware.vcloud.instantiateVAppTemplateParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateVAppTemplate" type="application/vnd.vmware.vcloud.instantiateVAppTemplateParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneVApp" type="application/vnd.vmware.vcloud.cloneVAppParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneVApp" type="application/vnd.vmware.vcloud.cloneVAppParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/moveVApp" type="application/vnd.vmware.vcloud.moveVAppParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/moveVApp" type="application/vnd.vmware.vcloud.moveVAppParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneVAppTemplate" type="application/vnd.vmware.vcloud.cloneVAppTemplateParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneVAppTemplate" type="application/vnd.vmware.vcloud.cloneVAppTemplateParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneMedia" type="application/vnd.vmware.vcloud.cloneMediaParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/cloneMedia" type="application/vnd.vmware.vcloud.cloneMediaParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateVmFromTemplate" type="application/vnd.vmware.vcloud.instantiateVmTemplateParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/instantiateVmFromTemplate" type="application/vnd.vmware.vcloud.instantiateVmTemplateParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/captureVApp" type="application/vnd.vmware.vcloud.captureVAppParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/captureVApp" type="application/vnd.vmware.vcloud.captureVAppParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/composeVApp" type="application/vnd.vmware.vcloud.composeVAppParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/composeVApp" type="application/vnd.vmware.vcloud.composeVAppParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/createVm" type="application/vnd.vmware.vcloud.CreateVmParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/createVm" type="application/vnd.vmware.vcloud.CreateVmParams+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/disk" type="application/vnd.vmware.vcloud.diskCreateParams+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/disk" type="application/vnd.vmware.vcloud.diskCreateParams+json"/>
+    <Link rel="fullEdgeGateway" href="https://pcdpre.beta.cloud.bt.com/network/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/edges" type="application/xml"/>
+    <Link rel="edgeGateways" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/edgeGateways" type="application/vnd.vmware.vcloud.query.records+xml"/>
+    <Link rel="edgeGateways" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/edgeGateways" type="application/vnd.vmware.vcloud.query.records+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/networks" type="application/vnd.vmware.vcloud.orgVdcNetwork+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/networks" type="application/vnd.vmware.vcloud.orgVdcNetwork+json"/>
+    <Link rel="nsx" href="https://pcdpre.beta.cloud.bt.com/network/edges?orgVdc=d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/xml"/>
+    <Link rel="orgVdcNetworks" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/networks" type="application/vnd.vmware.vcloud.query.records+xml"/>
+    <Link rel="orgVdcNetworks" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/networks" type="application/vnd.vmware.vcloud.query.records+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/computePolicies" type="application/vnd.vmware.vcloud.vdcComputePolicyReferences+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/computePolicies" type="application/vnd.vmware.vcloud.vdcComputePolicyReferences+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/controlAccess/" type="application/vnd.vmware.vcloud.controlAccess+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/controlAccess/" type="application/vnd.vmware.vcloud.controlAccess+json"/>
+    <Link rel="controlAccess" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/controlAccess" type="application/vnd.vmware.vcloud.controlAccess+xml"/>
+    <Link rel="controlAccess" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/action/controlAccess" type="application/vnd.vmware.vcloud.controlAccess+json"/>
+    <Link rel="vdcCapabilities" href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcs/urn:vcloud:vdc:d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/capabilities" type="application/json"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.admin.vdc+xml"/>
+    <Link rel="alternate" href="https://pcdpre.beta.cloud.bt.com/api/admin/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.admin.vdc+json"/>
+    <Link rel="manageFirewall" href="https://pcdpre.beta.cloud.bt.com/network/firewall/globalroot-0/config?vdc=d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/*+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+json"/>
+    <Link rel="metrics" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+xml"/>
+    <Link rel="metrics" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/metrics/historic" type="application/vnd.vmware.vcloud.metrics.historicUsageSpec+json"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/vmAffinityRules/" type="application/vnd.vmware.vcloud.vmaffinityrule+xml"/>
+    <Link rel="add" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/vmAffinityRules/" type="application/vnd.vmware.vcloud.vmaffinityrule+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/vmAffinityRules/" type="application/vnd.vmware.vcloud.vmaffinityrules+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/vmAffinityRules/" type="application/vnd.vmware.vcloud.vmaffinityrules+json"/>
+    <AllocationModel>AllocationVApp</AllocationModel>
+    <ComputeCapacity>
+        <Cpu>
+            <Units>MHz</Units>
+            <Allocated>0</Allocated>
+            <Limit>0</Limit>
+            <Reserved>0</Reserved>
+            <Used>65100</Used>
+        </Cpu>
+        <Memory>
+            <Units>MB</Units>
+            <Allocated>0</Allocated>
+            <Limit>98304</Limit>
+            <Reserved>0</Reserved>
+            <Used>65536</Used>
+        </Memory>
+    </ComputeCapacity>
+    <ResourceEntities>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-90df3035-24fc-4cbe-8120-6d2ba5bc1816" id="urn:vcloud:vapptemplate:90df3035-24fc-4cbe-8120-6d2ba5bc1816" name="RHEL8_x86_Template" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-3b61b225-3c0d-4a75-8a80-2b3c267bf057" id="urn:vcloud:vapptemplate:3b61b225-3c0d-4a75-8a80-2b3c267bf057" name="W2k19_STD_Template_en_us" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-5ae12039-6b61-4735-a78a-6e0f0002b21a" id="urn:vcloud:vapptemplate:5ae12039-6b61-4735-a78a-6e0f0002b21a" name="W2k16_STD_TMPLT_en_us" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-0d174c33-949a-4ed7-8bb3-5ac31dd5654f" id="urn:vcloud:vapptemplate:0d174c33-949a-4ed7-8bb3-5ac31dd5654f" name="u20043-tmpl" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" id="urn:vcloud:vapptemplate:1ac4ad3b-b7f7-4506-8eb4-50b443238c77" name="W2k19_STD_Template_en_us" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-d9b9b7fc-7bbe-4c1c-b016-f8db23fea6f2" id="urn:vcloud:vapptemplate:d9b9b7fc-7bbe-4c1c-b016-f8db23fea6f2" name="WindowsServer2k19" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-70f221cd-9d6f-48c9-a24c-46abf78ea7ff" id="urn:vcloud:vapptemplate:70f221cd-9d6f-48c9-a24c-46abf78ea7ff" name="ubuntu-16_04-cd" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-84a88353-ae15-4dcc-bc82-6b944efe669d" id="urn:vcloud:vapp:84a88353-ae15-4dcc-bc82-6b944efe669d" name="PCDK8Sv2-master" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-16f9deb0-2f3c-4613-bd56-aae0843f7b32" id="urn:vcloud:vapp:16f9deb0-2f3c-4613-bd56-aae0843f7b32" name="W2k16_STD_TMPLT" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-124a92b2-e1e4-4e2f-b1dc-8f70827a1318" id="urn:vcloud:vapp:124a92b2-e1e4-4e2f-b1dc-8f70827a1318" name="RHEL_x86_Template" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-e3be5a57-0774-4662-ac47-19baabde004d" id="urn:vcloud:vapp:e3be5a57-0774-4662-ac47-19baabde004d" name="testvmvcd" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-8519395c-afb5-4a18-91c4-d1597676531c" id="urn:vcloud:vapp:8519395c-afb5-4a18-91c4-d1597676531c" name="W2k19_STD_TMPLT_DPE_Test_Restore" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-cf6f23cb-633e-44ad-9538-c508a1ca246e" id="urn:vcloud:vapp:cf6f23cb-633e-44ad-9538-c508a1ca246e" name="SFTP-adaabb55-142e-4f70-a82d-6639c2cddd40" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-aaa624f5-6052-46ff-8cfb-f1ec06b8b3f1" id="urn:vcloud:vapp:aaa624f5-6052-46ff-8cfb-f1ec06b8b3f1" name="pcddockerv3-1" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-f580ce14-c5e7-4ec9-9193-f8e217620b4a" id="urn:vcloud:vapp:f580ce14-c5e7-4ec9-9193-f8e217620b4a" name="PCDK8Sv2-worker-1" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-2a121879-d9f1-44e6-b814-16b1561367ef" id="urn:vcloud:vapp:2a121879-d9f1-44e6-b814-16b1561367ef" name="PCDK8Sv2-worker-2" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-9b916e41-13f7-4115-9c94-07cf1b3d9f0b" id="urn:vcloud:vapp:9b916e41-13f7-4115-9c94-07cf1b3d9f0b" name="DockerPCDv4-2" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-81d26aa0-0124-448f-a26c-75dd26a57f0e" id="urn:vcloud:vapp:81d26aa0-0124-448f-a26c-75dd26a57f0e" name="PCDK8Sv2-worker-3" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-4ede0823-a293-46f8-a5a7-d0a00f44c650" id="urn:vcloud:vapp:4ede0823-a293-46f8-a5a7-d0a00f44c650" name="DockerPCDv4-1" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-6c64c61f-88af-43c1-9360-21adedce8a42" id="urn:vcloud:vapp:6c64c61f-88af-43c1-9360-21adedce8a42" name="W2k19_STD_TMPLT" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-2501bccb-f099-485f-b073-173cf66edffe" id="urn:vcloud:vapp:2501bccb-f099-485f-b073-173cf66edffe" name="Microservice1" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-92626802-de64-4750-a835-f2118e4aa5f0" id="urn:vcloud:vapp:92626802-de64-4750-a835-f2118e4aa5f0" name="vcdinst01" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-7000821f-0b2c-4ac5-8b7c-48fffd23f493" id="urn:vcloud:vapp:7000821f-0b2c-4ac5-8b7c-48fffd23f493" name="inst01-4aeb520a-bfbd-4809-818a-405e3574e5d3" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-83c3817e-e993-4d36-81af-b5991a61db8f" id="urn:vcloud:vapp:83c3817e-e993-4d36-81af-b5991a61db8f" name="inst01" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-c631bbe1-630f-4893-91c4-6c4d8664d87f" id="urn:vcloud:vapp:c631bbe1-630f-4893-91c4-6c4d8664d87f" name="ubuntu" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-572ab741-9bfc-44df-a715-18414a6fcc7a" id="urn:vcloud:vapp:572ab741-9bfc-44df-a715-18414a6fcc7a" name="u20043-tmpl" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-dd77a992-0ce3-4995-a79e-600ec18cde9d" id="urn:vcloud:vapp:dd77a992-0ce3-4995-a79e-600ec18cde9d" name="Windows_SFTP_Lab" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-50fc39e9-670f-4ca6-aa69-b444813347ac" id="urn:vcloud:vapp:50fc39e9-670f-4ca6-aa69-b444813347ac" name="WK19Client-937f281c-2877-4f95-921c-aab3afcb7c5c" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-e07b78bb-2de3-466c-9d23-33caf3699125" id="urn:vcloud:vapp:e07b78bb-2de3-466c-9d23-33caf3699125" name="Microservice1-2" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/vApp/vapp-26d88b93-7878-4e4a-987d-806194738670" id="urn:vcloud:vapp:26d88b93-7878-4e4a-987d-806194738670" name="pcddockerv3-2" type="application/vnd.vmware.vcloud.vApp+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/496b3703-02cf-4b09-8bc6-5f1268e1d6ec" id="urn:vcloud:media:496b3703-02cf-4b09-8bc6-5f1268e1d6ec" name="rhel-8.2-x86_64-dvd.iso" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/7401a40b-9715-4cda-9dd6-e4bf27a9f728" id="urn:vcloud:media:7401a40b-9715-4cda-9dd6-e4bf27a9f728" name="W2K16-DC-en-us-14393.iso" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/b92cbd9d-4404-444c-870f-0a98dbbacac4" id="urn:vcloud:media:b92cbd9d-4404-444c-870f-0a98dbbacac4" name="rhel-8.0-x86_64-dvd.iso" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/b6315599-7b26-4b95-82b6-8917213754f7" id="urn:vcloud:media:b6315599-7b26-4b95-82b6-8917213754f7" name="oel7.2-btbuild-v1.1.ova" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/7f9ed959-e734-4fad-b029-53cfa953be48" id="urn:vcloud:media:7f9ed959-e734-4fad-b029-53cfa953be48" name="centos7.2-btbuild-v1.0.ova" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/96c7932a-c056-4f4a-9eab-6d0174c6436c" id="urn:vcloud:media:96c7932a-c056-4f4a-9eab-6d0174c6436c" name="W2k19-DC-en-us.iso" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/aa6c9bd8-f3e6-4676-b96f-bd3e2a62f5cd" id="urn:vcloud:media:aa6c9bd8-f3e6-4676-b96f-bd3e2a62f5cd" name="rhel7.2-btbuild-v1.0.ova" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/ebf65327-0d7e-4d59-b3ff-2d74d597f757" id="urn:vcloud:media:ebf65327-0d7e-4d59-b3ff-2d74d597f757" name="ITMS-Tl-W2k19-G-Vh13.zip" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/a700e203-61bb-47da-86b0-5b4e18f74dc4" id="urn:vcloud:media:a700e203-61bb-47da-86b0-5b4e18f74dc4" name="SW_DVD9_NTRL_SQL_Svr_Standard_Edtn_2019Dec2019_64Bit_English_OEM_VL_X22-22109.ISO" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/a86a4ade-32c2-476a-abd3-297018473080" id="urn:vcloud:media:a86a4ade-32c2-476a-abd3-297018473080" name="ubuntu-20.04.3-live-server-amd64.iso" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/a06cd0db-8ca3-4e70-8c14-fa75f51955e0" id="urn:vcloud:media:a06cd0db-8ca3-4e70-8c14-fa75f51955e0" name="morph_ci_668" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/72acc399-bdc0-4f3e-a310-08907b4fed16" id="urn:vcloud:media:72acc399-bdc0-4f3e-a310-08907b4fed16" name="morph_ci_667" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/f1f30821-359c-4d84-baab-7561ceb4f271" id="urn:vcloud:media:f1f30821-359c-4d84-baab-7561ceb4f271" name="morph_ci_671" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/26897ef9-cd2e-426a-8027-2b161443d449" id="urn:vcloud:media:26897ef9-cd2e-426a-8027-2b161443d449" name="morph_ci_672" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/54e1689b-47c9-4422-a330-ddc53c1ddd67" id="urn:vcloud:media:54e1689b-47c9-4422-a330-ddc53c1ddd67" name="morph_ci_675" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/039bc45b-3948-4241-81b0-eb369ab804d3" id="urn:vcloud:media:039bc45b-3948-4241-81b0-eb369ab804d3" name="morph_ci_673" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/955e757e-9033-49a4-a2ff-8ac3f4831b1f" id="urn:vcloud:media:955e757e-9033-49a4-a2ff-8ac3f4831b1f" name="morph_ci_674" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/5f2dff11-5e14-4d96-be4f-b165e0c96053" id="urn:vcloud:media:5f2dff11-5e14-4d96-be4f-b165e0c96053" name="morph_ci_676" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/a2923911-8984-45ed-99b7-7ea321d8de39" id="urn:vcloud:media:a2923911-8984-45ed-99b7-7ea321d8de39" name="morph_ci_688" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/ad6130b3-1182-4f0b-bc2c-34d4d60643ed" id="urn:vcloud:media:ad6130b3-1182-4f0b-bc2c-34d4d60643ed" name="morph_ci_689" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/19bdbefb-818c-493b-a91b-f229f14ee8cd" id="urn:vcloud:media:19bdbefb-818c-493b-a91b-f229f14ee8cd" name="morph_ci_690" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/3ccc4422-b59c-46a7-9150-4ac7dceb1034" id="urn:vcloud:media:3ccc4422-b59c-46a7-9150-4ac7dceb1034" name="morph_ci_691" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/4618ef7c-a715-47b5-802a-7f8b005f3451" id="urn:vcloud:media:4618ef7c-a715-47b5-802a-7f8b005f3451" name="morph_ci_692" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/94875c97-4280-4587-9d72-9a2ddc325bd0" id="urn:vcloud:media:94875c97-4280-4587-9d72-9a2ddc325bd0" name="morph_ci_693" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/cb3267c0-06d3-481f-a2a8-ca1ec97e823c" id="urn:vcloud:media:cb3267c0-06d3-481f-a2a8-ca1ec97e823c" name="morph_ci_695" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/d79b2595-12b3-4ab2-b16c-82f773fbd950" id="urn:vcloud:media:d79b2595-12b3-4ab2-b16c-82f773fbd950" name="morph_ci_697" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/182796d9-8290-4e81-9a81-4d2cc5277821" id="urn:vcloud:media:182796d9-8290-4e81-9a81-4d2cc5277821" name="morph_ci_696" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/68064748-c4ca-42af-933d-07279dd895de" id="urn:vcloud:media:68064748-c4ca-42af-933d-07279dd895de" name="morph_ci_698" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/02fac291-bce1-45e2-a40b-157f7c00007c" id="urn:vcloud:media:02fac291-bce1-45e2-a40b-157f7c00007c" name="morph_ci_699" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/66cfe3e1-0df8-446f-8704-c4da02c33dc2" id="urn:vcloud:media:66cfe3e1-0df8-446f-8704-c4da02c33dc2" name="morph_ci_700" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/de8873b9-eae7-4b86-87eb-ac6f45d19769" id="urn:vcloud:media:de8873b9-eae7-4b86-87eb-ac6f45d19769" name="morph_ci_701" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/44277add-c207-47a3-89a5-1803be1abd10" id="urn:vcloud:media:44277add-c207-47a3-89a5-1803be1abd10" name="morph_ci_702" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/f6c9d75d-bf8f-42ec-982f-ba1d08a1a82c" id="urn:vcloud:media:f6c9d75d-bf8f-42ec-982f-ba1d08a1a82c" name="morph_ci_703" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/eaa18f89-b7d3-447d-bef6-31b19ba0afb0" id="urn:vcloud:media:eaa18f89-b7d3-447d-bef6-31b19ba0afb0" name="morph_ci_704" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/cb53da46-f45b-4ee1-a299-82d098dc551f" id="urn:vcloud:media:cb53da46-f45b-4ee1-a299-82d098dc551f" name="morph_ci_705" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/e0d1ecc9-0aa3-427f-a46f-12996dfcf3b1" id="urn:vcloud:media:e0d1ecc9-0aa3-427f-a46f-12996dfcf3b1" name="morph_ci_706" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/65642256-9652-4677-a07b-7ddc645d7a08" id="urn:vcloud:media:65642256-9652-4677-a07b-7ddc645d7a08" name="morph_ci_707" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/425f9b6b-fcdd-4c93-8058-3194f3e21885" id="urn:vcloud:media:425f9b6b-fcdd-4c93-8058-3194f3e21885" name="morph_ci_709" type="application/vnd.vmware.vcloud.media+xml"/>
+        <ResourceEntity href="https://pcdpre.beta.cloud.bt.com/api/media/3e82a58c-300f-4778-be3f-855b2d8ca3b8" id="urn:vcloud:media:3e82a58c-300f-4778-be3f-855b2d8ca3b8" name="morph_ci_708" type="application/vnd.vmware.vcloud.media+xml"/>
+    </ResourceEntities>
+    <AvailableNetworks>
+        <Network href="https://pcdpre.beta.cloud.bt.com/api/network/dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" id="urn:vcloud:network:dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" name="ORG_Routed_Network" type="application/vnd.vmware.vcloud.network+xml"/>
+        <Network href="https://pcdpre.beta.cloud.bt.com/api/network/b06c74be-772d-42b5-bf11-99fbb19d82e4" id="urn:vcloud:network:b06c74be-772d-42b5-bf11-99fbb19d82e4" name="ORG_Routed_Network_External_Services" type="application/vnd.vmware.vcloud.network+xml"/>
+        <Network href="https://pcdpre.beta.cloud.bt.com/api/network/eed5da17-f855-4c60-a109-285fed38d3ec" id="urn:vcloud:network:eed5da17-f855-4c60-a109-285fed38d3ec" name="MCMS_Routed_Network" type="application/vnd.vmware.vcloud.network+xml"/>
+    </AvailableNetworks>
+    <Capabilities>
+        <SupportedHardwareVersions>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-04" name="vmx-04" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-04</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-07" name="vmx-07" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-07</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-08" name="vmx-08" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-08</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-09" name="vmx-09" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-09</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-10" name="vmx-10" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-10</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-11" name="vmx-11" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-11</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-12" name="vmx-12" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-12</SupportedHardwareVersion>
+            <SupportedHardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-13" name="vmx-13" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-13</SupportedHardwareVersion>
+            <SupportedHardwareVersion default="true" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-14" name="vmx-14" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-14</SupportedHardwareVersion>
+        </SupportedHardwareVersions>
+    </Capabilities>
+    <NicQuota>0</NicQuota>
+    <NetworkQuota>1000</NetworkQuota>
+    <UsedNetworkCount>0</UsedNetworkCount>
+    <VmQuota>30</VmQuota>
+    <IsEnabled>true</IsEnabled>
+    <VdcStorageProfiles>
+        <VdcStorageProfile href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" id="urn:vcloud:vdcstorageProfile:19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+    </VdcStorageProfiles>
+    <DefaultComputePolicy href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcComputePolicies/urn:vcloud:vdcComputePolicy:bc84c412-e213-413f-8145-780f4551115d" id="urn:vcloud:vdcComputePolicy:bc84c412-e213-413f-8145-780f4551115d" name="PCD-Small-C1-M1" type="application/json"/>
+    <VCpuInMhz2>2100</VCpuInMhz2>
+</Vdc>
+
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.(*Vdc).GetVAppByHref-->govcd.(*Vdc).GetVAppByHref-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response caller vcd.resourceVcdVappFirewallRulesCreate-->vcd.resourceVcdVappFirewallRulesUpdate-->vcd.getVapp-->govcd.(*Vdc).GetVAppById-->govcd.(*Vdc).GetVAppByHref-->govcd.(*Vdc).GetVAppByHref-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:38 Response status 200 OK
+2021/11/09 14:24:38 ################################################################################
+2021/11/09 14:24:38 Response header:
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:38 	Content-Type: [application/vnd.vmware.vcloud.vapptemplate+xml;version=33.0]
+2021/11/09 14:24:38 	Date: [Tue, 09 Nov 2021 14:24:38 GMT]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Id: [3d109232-bd6e-494f-9b11-cf06d4d868c8]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Request-Execution-Time: [314]
+2021/11/09 14:24:38 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:38 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:38 Response text: [41603]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VAppTemplate xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" goldMaster="false" ovfDescriptorUploaded="true" status="8" name="W2k19_STD_Template_en_us" id="urn:vcloud:vapptemplate:1ac4ad3b-b7f7-4506-8eb4-50b443238c77" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml">
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+xml"/>
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+json"/>
+    <Link rel="catalogItem" href="https://pcdpre.beta.cloud.bt.com/api/catalogItem/f4def289-4360-40d8-bc04-0cee3b647658" type="application/vnd.vmware.vcloud.catalogItem+xml"/>
+    <Link rel="catalogItem" href="https://pcdpre.beta.cloud.bt.com/api/catalogItem/f4def289-4360-40d8-bc04-0cee3b647658" type="application/vnd.vmware.vcloud.catalogItem+json"/>
+    <Link rel="remove" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+json"/>
+    <Link rel="enable" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/action/enableDownload"/>
+    <Link rel="disable" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/action/disableDownload"/>
+    <Link rel="ovf" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/ovf" type="text/xml"/>
+    <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+    <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/owner" type="application/vnd.vmware.vcloud.owner+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/owner" type="application/vnd.vmware.vcloud.owner+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/productSections/" type="application/vnd.vmware.vcloud.productSections+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/productSections/" type="application/vnd.vmware.vcloud.productSections+json"/>
+    <Description>Windows Server 2019 Standard Edition</Description>
+    <Owner type="application/vnd.vmware.vcloud.owner+xml">
+        <User href="https://pcdpre.beta.cloud.bt.com/api/admin/user/2bedd2e7-6912-4c95-991a-a36d74ffaab0" name="mcms" type="application/vnd.vmware.admin.user+xml"/>
+    </Owner>
+    <Children>
+        <Vm goldMaster="false" status="8" name="W2k19-STD-TMPLT" id="urn:vcloud:vm:3bf8dff3-0e2f-426c-b12c-30e845178af2" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2" type="application/vnd.vmware.vcloud.vm+xml">
+            <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+            <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+json"/>
+            <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+            <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" type="application/vnd.vmware.vcloud.vdcStorageProfile+json"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/productSections/" type="application/vnd.vmware.vcloud.productSections+xml"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/productSections/" type="application/vnd.vmware.vcloud.productSections+json"/>
+            <Description>Windows Server 2019 Standard</Description>
+            <NetworkConnectionSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/networkConnectionSection/" type="application/vnd.vmware.vcloud.networkConnectionSection+xml" ovf:required="false">
+                <ovf:Info>Specifies the available VM network connections</ovf:Info>
+                <PrimaryNetworkConnectionIndex>0</PrimaryNetworkConnectionIndex>
+                <NetworkConnection needsCustomization="false" network="ORG_Routed_Network">
+                    <NetworkConnectionIndex>0</NetworkConnectionIndex>
+                    <IsConnected>true</IsConnected>
+                    <MACAddress>00:50:56:01:00:11</MACAddress>
+                    <IpAddressAllocationMode>POOL</IpAddressAllocationMode>
+                    <NetworkAdapterType>E1000E</NetworkAdapterType>
+                </NetworkConnection>
+            </NetworkConnectionSection>
+            <GuestCustomizationSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/guestCustomizationSection/" type="application/vnd.vmware.vcloud.guestCustomizationSection+xml" ovf:required="false">
+                <ovf:Info>Specifies Guest OS Customization Settings</ovf:Info>
+                <Enabled>true</Enabled>
+                <ChangeSid>true</ChangeSid>
+                <VirtualMachineId>3bf8dff3-0e2f-426c-b12c-30e845178af2</VirtualMachineId>
+                <JoinDomainEnabled>false</JoinDomainEnabled>
+                <UseOrgSettings>false</UseOrgSettings>
+                <AdminPasswordEnabled>false</AdminPasswordEnabled>
+                <AdminPasswordAuto>true</AdminPasswordAuto>
+                <AdminAutoLogonEnabled>true</AdminAutoLogonEnabled>
+                <AdminAutoLogonCount>1</AdminAutoLogonCount>
+                <ResetPasswordRequired>true</ResetPasswordRequired>
+                <ComputerName>W2k19-STD-TMPLT</ComputerName>
+            </GuestCustomizationSection>
+            <ovf:OperatingSystemSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ovf:id="102" ns10:type="application/vnd.vmware.vcloud.operatingSystemSection+xml" vmw:osType="windows9Server64Guest" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vApp/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/operatingSystemSection/">
+                <ovf:Info>Specifies the operating system installed</ovf:Info>
+                <ovf:Description>Microsoft Windows Server 2016 or later (64-bit)</ovf:Description>
+            </ovf:OperatingSystemSection>
+            <ovf:VirtualHardwareSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ovf:transport="" ns10:type="application/vnd.vmware.vcloud.virtualHardwareSection+xml" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/">
+                <ovf:Info>Virtual hardware requirements</ovf:Info>
+                <ovf:System>
+                    <vssd:AutomaticRecoveryAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticShutdownAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupActionDelay xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupActionSequenceNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:CreationTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ElementName>Virtual Hardware Family</vssd:ElementName>
+                    <vssd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:InstanceID>0</vssd:InstanceID>
+                    <vssd:LogDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:RecoveryFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SnapshotDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SuspendDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SwapFileDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:VirtualSystemIdentifier>W2k19-STD-TMPLT</vssd:VirtualSystemIdentifier>
+                    <vssd:VirtualSystemType>vmx-14</vssd:VirtualSystemType>
+                </ovf:System>
+                <ovf:Item>
+                    <rasd:Address>00:50:56:01:00:11</rasd:Address>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>true</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Connection ns10:ipAddressingMode="POOL" ns10:primaryNetworkConnection="true">ORG_Routed_Network</rasd:Connection>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>E1000s ethernet adapter on "ORG_Routed_Network"</rasd:Description>
+                    <rasd:ElementName>Network adapter 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>1</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType>E1000E</rasd:ResourceSubType>
+                    <rasd:ResourceType>10</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address>0</rasd:Address>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>SCSI Controller</rasd:Description>
+                    <rasd:ElementName>SCSI Controller 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>2</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType>lsilogicsas</rasd:ResourceSubType>
+                    <rasd:ResourceType>6</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Hard disk</rasd:Description>
+                    <rasd:ElementName>Hard disk 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource ns10:storageProfileHref="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" ns10:busType="6" ns10:busSubType="lsilogicsas" ns10:capacity="81920" ns10:iops="0" ns10:storageProfileOverrideVmDefault="false"></rasd:HostResource>
+                    <rasd:InstanceID>2000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent>2</rasd:Parent>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>17</rasd:ResourceType>
+                    <rasd:VirtualQuantity>85899345920</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits>byte</rasd:VirtualQuantityUnits>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address>0</rasd:Address>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>IDE Controller</rasd:Description>
+                    <rasd:ElementName>IDE Controller 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>3</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>5</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>false</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>CD/DVD Drive</rasd:Description>
+                    <rasd:ElementName>CD/DVD Drive 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource></rasd:HostResource>
+                    <rasd:InstanceID>3000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent>3</rasd:Parent>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>15</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>false</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Floppy Drive</rasd:Description>
+                    <rasd:ElementName>Floppy Drive 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource></rasd:HostResource>
+                    <rasd:InstanceID>8000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>14</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits>hertz * 10^6</rasd:AllocationUnits>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Number of Virtual CPUs</rasd:Description>
+                    <rasd:ElementName>2 virtual CPU(s)</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>4</rasd:InstanceID>
+                    <rasd:Limit>4200</rasd:Limit>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation>840</rasd:Reservation>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>3</rasd:ResourceType>
+                    <rasd:VirtualQuantity>2</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight>2000</rasd:Weight>
+                    <vmw:CoresPerSocket ovf:required="false">1</vmw:CoresPerSocket>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits>byte * 2^20</rasd:AllocationUnits>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Memory Size</rasd:Description>
+                    <rasd:ElementName>4096 MB of memory</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>5</rasd:InstanceID>
+                    <rasd:Limit>4096</rasd:Limit>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation>819</rasd:Reservation>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>4</rasd:ResourceType>
+                    <rasd:VirtualQuantity>4096</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight>40960</rasd:Weight>
+                </ovf:Item>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/cpu" type="application/vnd.vmware.vcloud.rasdItem+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/cpu" type="application/vnd.vmware.vcloud.rasdItem+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/memory" type="application/vnd.vmware.vcloud.rasdItem+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/memory" type="application/vnd.vmware.vcloud.rasdItem+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/disks" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/disks" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/media" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/media" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/networkCards" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/networkCards" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/serialPorts" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/serialPorts" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+            </ovf:VirtualHardwareSection>
+            <VmSpecSection>
+                <ovf:Info>Virtual hardware requirements (simplified)</ovf:Info>
+                <OsType>windows9Server64Guest</OsType>
+                <NumCpus>2</NumCpus>
+                <NumCoresPerSocket>1</NumCoresPerSocket>
+                <CpuResourceMhz>
+                    <Configured>2</Configured>
+                    <Reservation>840</Reservation>
+                    <Limit>4200</Limit>
+                    <SharesLevel>NORMAL</SharesLevel>
+                    <Shares>2000</Shares>
+                </CpuResourceMhz>
+                <MemoryResourceMb>
+                    <Configured>4096</Configured>
+                    <Reservation>819</Reservation>
+                    <Limit>4096</Limit>
+                    <SharesLevel>NORMAL</SharesLevel>
+                    <Shares>40960</Shares>
+                </MemoryResourceMb>
+                <MediaSection>
+                    <MediaSettings>
+                        <DeviceId>3000</DeviceId>
+                        <MediaType>ISO</MediaType>
+                        <MediaState>DISCONNECTED</MediaState>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                        <AdapterType>1</AdapterType>
+                    </MediaSettings>
+                    <MediaSettings>
+                        <DeviceId>8000</DeviceId>
+                        <MediaType>FLOPPY</MediaType>
+                        <MediaState>DISCONNECTED</MediaState>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                    </MediaSettings>
+                </MediaSection>
+                <DiskSection>
+                    <DiskSettings>
+                        <DiskId>2000</DiskId>
+                        <SizeMb>81920</SizeMb>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                        <AdapterType>4</AdapterType>
+                        <ThinProvisioned>true</ThinProvisioned>
+                        <StorageProfile href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" id="urn:vcloud:vdcstorageProfile:19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+                        <overrideVmDefault>false</overrideVmDefault>
+                        <iops>0</iops>
+                        <VirtualQuantityUnit>byte</VirtualQuantityUnit>
+                    </DiskSettings>
+                </DiskSection>
+                <HardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-14" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-14</HardwareVersion>
+                <VmToolsVersion>11265</VmToolsVersion>
+                <VirtualCpuType>VM64</VirtualCpuType>
+                <TimeSyncWithHost>false</TimeSyncWithHost>
+            </VmSpecSection>
+            <VAppScopedLocalId>ec219a87-1cd2-4f46-96e2-59bc8252d931</VAppScopedLocalId>
+            <VdcComputePolicy href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcComputePolicies/urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" id="urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" name="PCD-Small-C2-M6" type="application/json"/>
+            <ComputePolicy>
+                <VmSizingPolicy href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcComputePolicies/urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" id="urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" name="PCD-Small-C2-M6" type="application/json"/>
+                <VmSizingPolicyFinal>false</VmSizingPolicyFinal>
+            </ComputePolicy>
+            <DateCreated>2021-10-29T13:12:05.306+01:00</DateCreated>
+        </Vm>
+    </Children>
+    <ovf:NetworkSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ns10:type="application/vnd.vmware.vcloud.networkSection+xml" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/networkSection/">
+        <ovf:Info>The list of logical networks</ovf:Info>
+        <ovf:Network ovf:name="ORG_Routed_Network">
+            <ovf:Description></ovf:Description>
+        </ovf:Network>
+    </ovf:NetworkSection>
+    <NetworkConfigSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/networkConfigSection/" type="application/vnd.vmware.vcloud.networkConfigSection+xml" ovf:required="false">
+        <ovf:Info>The configuration parameters for logical networks</ovf:Info>
+        <NetworkConfig networkName="ORG_Routed_Network">
+            <Description></Description>
+            <Configuration>
+                <IpScopes>
+                    <IpScope>
+                        <IsInherited>true</IsInherited>
+                        <Gateway>192.168.0.1</Gateway>
+                        <Netmask>255.255.255.0</Netmask>
+                        <SubnetPrefixLength>24</SubnetPrefixLength>
+                        <Dns1>8.8.8.8</Dns1>
+                        <Dns2>8.8.4.4</Dns2>
+                        <IsEnabled>true</IsEnabled>
+                        <IpRanges>
+                            <IpRange>
+<StartAddress>192.168.0.10</StartAddress>
+<EndAddress>192.168.0.50</EndAddress>
+                            </IpRange>
+                        </IpRanges>
+                    </IpScope>
+                </IpScopes>
+                <ParentNetwork href="https://pcdpre.beta.cloud.bt.com/api/admin/network/dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" id="dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" name="ORG_Routed_Network"/>
+                <FenceMode>bridged</FenceMode>
+                <RetainNetInfoAcrossDeployments>false</RetainNetInfoAcrossDeployments>
+                <GuestVlanAllowed>false</GuestVlanAllowed>
+            </Configuration>
+            <IsDeployed>false</IsDeployed>
+        </NetworkConfig>
+    </NetworkConfigSection>
+    <LeaseSettingsSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+xml" ovf:required="false">
+        <ovf:Info>Lease settings section</ovf:Info>
+        <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+xml"/>
+        <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+json"/>
+        <StorageLeaseInSeconds>0</StorageLeaseInSeconds>
+    </LeaseSettingsSection>
+    <CustomizationSection goldMaster="false" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/customizationSection/" type="application/vnd.vmware.vcloud.customizationSection+xml" ovf:required="false">
+        <ovf:Info>VApp template customization section</ovf:Info>
+        <CustomizeOnInstantiate>true</CustomizeOnInstantiate>
+    </CustomizationSection>
+    <DateCreated>2021-10-29T13:12:05.306+01:00</DateCreated>
+</VAppTemplate>
+
+2021/11/09 14:24:38 [TRACE] UpdateNetworkFirewallRulesAsync with values: id: MCMS_Routed_Network and firewallServiceConfiguration: []*types.FirewallRule{(*types.FirewallRule)(0xc0002208f0)}
+2021/11/09 14:24:38 [TRACE] [GetVappNetworkById] getting vApp Network:  and refresh true
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Request caller: govcd.(*VApp).Refresh-->govcd.(*VApp).Refresh-->govcd.executeRequestWithApiVersion-->govcd.executeRequestWithApiVersion-->govcd.executeRequestCustomErr-->govcd.executeRequestCustomErr-->govcd.(*Client).newRequest
+2021/11/09 14:24:38 GET https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77
+2021/11/09 14:24:38 --------------------------------------------------------------------------------
+2021/11/09 14:24:38 Req header:
+2021/11/09 14:24:38 	User-Agent: [terraform-provider-vcd/v3.4.0 (windows/amd64; isProvider:false)]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Access-Token: [********]
+2021/11/09 14:24:38 	Accept: [application/*+xml;version=33.0]
+2021/11/09 14:24:38 	X-Vmware-Vcloud-Token-Type: [Bearer]
+2021/11/09 14:24:38 	Authorization: [********]
+2021/11/09 14:24:39 ################################################################################
+2021/11/09 14:24:39 Response caller vcd.resourceVcdVappFirewallRulesUpdate-->govcd.(*VApp).UpdateNetworkFirewallRules-->govcd.(*VApp).UpdateNetworkFirewallRulesAsync-->govcd.(*VApp).GetVappNetworkById-->govcd.(*VApp).Refresh-->govcd.(*VApp).Refresh-->govcd.(*Client).executeRequest-->govcd.decodeBody
+2021/11/09 14:24:39 Response status 200 OK
+2021/11/09 14:24:39 ################################################################################
+2021/11/09 14:24:39 Response header:
+2021/11/09 14:24:39 	Date: [Tue, 09 Nov 2021 14:24:39 GMT]
+2021/11/09 14:24:39 	X-Vmware-Vcloud-Request-Id: [d365aff2-091c-45df-b45c-d03e99ae2a20]
+2021/11/09 14:24:39 	Content-Type: [application/vnd.vmware.vcloud.vapptemplate+xml;version=33.0]
+2021/11/09 14:24:39 	Cache-Control: [no-store, must-revalidate]
+2021/11/09 14:24:39 	Vary: [Accept-Encoding, User-Agent]
+2021/11/09 14:24:39 	X-Vmware-Vcloud-Ceip-Id: [ee56b50c-3701-4b4a-aac1-6b53b6086cdc]
+2021/11/09 14:24:39 	X-Vmware-Vcloud-Request-Execution-Time: [284]
+2021/11/09 14:24:39 Response text: [41603]
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VAppTemplate xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" goldMaster="false" ovfDescriptorUploaded="true" status="8" name="W2k19_STD_Template_en_us" id="urn:vcloud:vapptemplate:1ac4ad3b-b7f7-4506-8eb4-50b443238c77" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml">
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+xml"/>
+    <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514" type="application/vnd.vmware.vcloud.vdc+json"/>
+    <Link rel="catalogItem" href="https://pcdpre.beta.cloud.bt.com/api/catalogItem/f4def289-4360-40d8-bc04-0cee3b647658" type="application/vnd.vmware.vcloud.catalogItem+xml"/>
+    <Link rel="catalogItem" href="https://pcdpre.beta.cloud.bt.com/api/catalogItem/f4def289-4360-40d8-bc04-0cee3b647658" type="application/vnd.vmware.vcloud.catalogItem+json"/>
+    <Link rel="remove" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+    <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+json"/>
+    <Link rel="enable" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/action/enableDownload"/>
+    <Link rel="disable" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/action/disableDownload"/>
+    <Link rel="ovf" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/ovf" type="text/xml"/>
+    <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+    <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/owner" type="application/vnd.vmware.vcloud.owner+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/owner" type="application/vnd.vmware.vcloud.owner+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/productSections/" type="application/vnd.vmware.vcloud.productSections+xml"/>
+    <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/productSections/" type="application/vnd.vmware.vcloud.productSections+json"/>
+    <Description>Windows Server 2019 Standard Edition</Description>
+    <Owner type="application/vnd.vmware.vcloud.owner+xml">
+        <User href="https://pcdpre.beta.cloud.bt.com/api/admin/user/2bedd2e7-6912-4c95-991a-a36d74ffaab0" name="mcms" type="application/vnd.vmware.admin.user+xml"/>
+    </Owner>
+    <Children>
+        <Vm goldMaster="false" status="8" name="W2k19-STD-TMPLT" id="urn:vcloud:vm:3bf8dff3-0e2f-426c-b12c-30e845178af2" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2" type="application/vnd.vmware.vcloud.vm+xml">
+            <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+xml"/>
+            <Link rel="up" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77" type="application/vnd.vmware.vcloud.vAppTemplate+json"/>
+            <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+            <Link rel="storageProfile" href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" type="application/vnd.vmware.vcloud.vdcStorageProfile+json"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/metadata" type="application/vnd.vmware.vcloud.metadata+xml"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/metadata" type="application/vnd.vmware.vcloud.metadata+json"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/productSections/" type="application/vnd.vmware.vcloud.productSections+xml"/>
+            <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/productSections/" type="application/vnd.vmware.vcloud.productSections+json"/>
+            <Description>Windows Server 2019 Standard</Description>
+            <NetworkConnectionSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/networkConnectionSection/" type="application/vnd.vmware.vcloud.networkConnectionSection+xml" ovf:required="false">
+                <ovf:Info>Specifies the available VM network connections</ovf:Info>
+                <PrimaryNetworkConnectionIndex>0</PrimaryNetworkConnectionIndex>
+                <NetworkConnection needsCustomization="false" network="ORG_Routed_Network">
+                    <NetworkConnectionIndex>0</NetworkConnectionIndex>
+                    <IsConnected>true</IsConnected>
+                    <MACAddress>00:50:56:01:00:11</MACAddress>
+                    <IpAddressAllocationMode>POOL</IpAddressAllocationMode>
+                    <NetworkAdapterType>E1000E</NetworkAdapterType>
+                </NetworkConnection>
+            </NetworkConnectionSection>
+            <GuestCustomizationSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/guestCustomizationSection/" type="application/vnd.vmware.vcloud.guestCustomizationSection+xml" ovf:required="false">
+                <ovf:Info>Specifies Guest OS Customization Settings</ovf:Info>
+                <Enabled>true</Enabled>
+                <ChangeSid>true</ChangeSid>
+                <VirtualMachineId>3bf8dff3-0e2f-426c-b12c-30e845178af2</VirtualMachineId>
+                <JoinDomainEnabled>false</JoinDomainEnabled>
+                <UseOrgSettings>false</UseOrgSettings>
+                <AdminPasswordEnabled>false</AdminPasswordEnabled>
+                <AdminPasswordAuto>true</AdminPasswordAuto>
+                <AdminAutoLogonEnabled>true</AdminAutoLogonEnabled>
+                <AdminAutoLogonCount>1</AdminAutoLogonCount>
+                <ResetPasswordRequired>true</ResetPasswordRequired>
+                <ComputerName>W2k19-STD-TMPLT</ComputerName>
+            </GuestCustomizationSection>
+            <ovf:OperatingSystemSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ovf:id="102" ns10:type="application/vnd.vmware.vcloud.operatingSystemSection+xml" vmw:osType="windows9Server64Guest" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vApp/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/operatingSystemSection/">
+                <ovf:Info>Specifies the operating system installed</ovf:Info>
+                <ovf:Description>Microsoft Windows Server 2016 or later (64-bit)</ovf:Description>
+            </ovf:OperatingSystemSection>
+            <ovf:VirtualHardwareSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ovf:transport="" ns10:type="application/vnd.vmware.vcloud.virtualHardwareSection+xml" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/">
+                <ovf:Info>Virtual hardware requirements</ovf:Info>
+                <ovf:System>
+                    <vssd:AutomaticRecoveryAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticShutdownAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupAction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupActionDelay xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:AutomaticStartupActionSequenceNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:CreationTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:ElementName>Virtual Hardware Family</vssd:ElementName>
+                    <vssd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:InstanceID>0</vssd:InstanceID>
+                    <vssd:LogDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:RecoveryFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SnapshotDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SuspendDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:SwapFileDataRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <vssd:VirtualSystemIdentifier>W2k19-STD-TMPLT</vssd:VirtualSystemIdentifier>
+                    <vssd:VirtualSystemType>vmx-14</vssd:VirtualSystemType>
+                </ovf:System>
+                <ovf:Item>
+                    <rasd:Address>00:50:56:01:00:11</rasd:Address>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>true</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Connection ns10:ipAddressingMode="POOL" ns10:primaryNetworkConnection="true">ORG_Routed_Network</rasd:Connection>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>E1000s ethernet adapter on "ORG_Routed_Network"</rasd:Description>
+                    <rasd:ElementName>Network adapter 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>1</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType>E1000E</rasd:ResourceSubType>
+                    <rasd:ResourceType>10</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address>0</rasd:Address>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>SCSI Controller</rasd:Description>
+                    <rasd:ElementName>SCSI Controller 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>2</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType>lsilogicsas</rasd:ResourceSubType>
+                    <rasd:ResourceType>6</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Hard disk</rasd:Description>
+                    <rasd:ElementName>Hard disk 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource ns10:storageProfileHref="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" ns10:busType="6" ns10:busSubType="lsilogicsas" ns10:capacity="81920" ns10:iops="0" ns10:storageProfileOverrideVmDefault="false"></rasd:HostResource>
+                    <rasd:InstanceID>2000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent>2</rasd:Parent>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>17</rasd:ResourceType>
+                    <rasd:VirtualQuantity>85899345920</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits>byte</rasd:VirtualQuantityUnits>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address>0</rasd:Address>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>IDE Controller</rasd:Description>
+                    <rasd:ElementName>IDE Controller 0</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>3</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>5</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>false</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>CD/DVD Drive</rasd:Description>
+                    <rasd:ElementName>CD/DVD Drive 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource></rasd:HostResource>
+                    <rasd:InstanceID>3000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent>3</rasd:Parent>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>15</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent>0</rasd:AddressOnParent>
+                    <rasd:AllocationUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticAllocation>false</rasd:AutomaticAllocation>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Floppy Drive</rasd:Description>
+                    <rasd:ElementName>Floppy Drive 1</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:HostResource></rasd:HostResource>
+                    <rasd:InstanceID>8000</rasd:InstanceID>
+                    <rasd:Limit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>14</rasd:ResourceType>
+                    <rasd:VirtualQuantity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits>hertz * 10^6</rasd:AllocationUnits>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Number of Virtual CPUs</rasd:Description>
+                    <rasd:ElementName>2 virtual CPU(s)</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>4</rasd:InstanceID>
+                    <rasd:Limit>4200</rasd:Limit>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation>840</rasd:Reservation>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>3</rasd:ResourceType>
+                    <rasd:VirtualQuantity>2</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight>2000</rasd:Weight>
+                    <vmw:CoresPerSocket ovf:required="false">1</vmw:CoresPerSocket>
+                </ovf:Item>
+                <ovf:Item>
+                    <rasd:Address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AddressOnParent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AllocationUnits>byte * 2^20</rasd:AllocationUnits>
+                    <rasd:AutomaticAllocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:AutomaticDeallocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Caption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ChangeableType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConfigurationName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ConsumerVisibility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Description>Memory Size</rasd:Description>
+                    <rasd:ElementName>4096 MB of memory</rasd:ElementName>
+                    <rasd:Generation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:InstanceID>5</rasd:InstanceID>
+                    <rasd:Limit>4096</rasd:Limit>
+                    <rasd:MappingBehavior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:OtherResourceType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Parent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:PoolID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Reservation>819</rasd:Reservation>
+                    <rasd:ResourceSubType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:ResourceType>4</rasd:ResourceType>
+                    <rasd:VirtualQuantity>4096</rasd:VirtualQuantity>
+                    <rasd:VirtualQuantityUnits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <rasd:Weight>40960</rasd:Weight>
+                </ovf:Item>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/cpu" type="application/vnd.vmware.vcloud.rasdItem+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/cpu" type="application/vnd.vmware.vcloud.rasdItem+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/memory" type="application/vnd.vmware.vcloud.rasdItem+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/memory" type="application/vnd.vmware.vcloud.rasdItem+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/disks" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/disks" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/media" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/media" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/networkCards" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/networkCards" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/serialPorts" type="application/vnd.vmware.vcloud.rasdItemsList+xml"/>
+                <Link rel="down" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vm-3bf8dff3-0e2f-426c-b12c-30e845178af2/virtualHardwareSection/serialPorts" type="application/vnd.vmware.vcloud.rasdItemsList+json"/>
+            </ovf:VirtualHardwareSection>
+            <VmSpecSection>
+                <ovf:Info>Virtual hardware requirements (simplified)</ovf:Info>
+                <OsType>windows9Server64Guest</OsType>
+                <NumCpus>2</NumCpus>
+                <NumCoresPerSocket>1</NumCoresPerSocket>
+                <CpuResourceMhz>
+                    <Configured>2</Configured>
+                    <Reservation>840</Reservation>
+                    <Limit>4200</Limit>
+                    <SharesLevel>NORMAL</SharesLevel>
+                    <Shares>2000</Shares>
+                </CpuResourceMhz>
+                <MemoryResourceMb>
+                    <Configured>4096</Configured>
+                    <Reservation>819</Reservation>
+                    <Limit>4096</Limit>
+                    <SharesLevel>NORMAL</SharesLevel>
+                    <Shares>40960</Shares>
+                </MemoryResourceMb>
+                <MediaSection>
+                    <MediaSettings>
+                        <DeviceId>3000</DeviceId>
+                        <MediaType>ISO</MediaType>
+                        <MediaState>DISCONNECTED</MediaState>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                        <AdapterType>1</AdapterType>
+                    </MediaSettings>
+                    <MediaSettings>
+                        <DeviceId>8000</DeviceId>
+                        <MediaType>FLOPPY</MediaType>
+                        <MediaState>DISCONNECTED</MediaState>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                    </MediaSettings>
+                </MediaSection>
+                <DiskSection>
+                    <DiskSettings>
+                        <DiskId>2000</DiskId>
+                        <SizeMb>81920</SizeMb>
+                        <UnitNumber>0</UnitNumber>
+                        <BusNumber>0</BusNumber>
+                        <AdapterType>4</AdapterType>
+                        <ThinProvisioned>true</ThinProvisioned>
+                        <StorageProfile href="https://pcdpre.beta.cloud.bt.com/api/vdcStorageProfile/19ca93bd-2631-4584-b20c-4c4b8b732707" id="urn:vcloud:vdcstorageProfile:19ca93bd-2631-4584-b20c-4c4b8b732707" name="vSAN Default Storage Policy" type="application/vnd.vmware.vcloud.vdcStorageProfile+xml"/>
+                        <overrideVmDefault>false</overrideVmDefault>
+                        <iops>0</iops>
+                        <VirtualQuantityUnit>byte</VirtualQuantityUnit>
+                    </DiskSettings>
+                </DiskSection>
+                <HardwareVersion href="https://pcdpre.beta.cloud.bt.com/api/vdc/d07a8e42-d4e8-4f9f-8fcf-ceb39952b514/hwv/vmx-14" type="application/vnd.vmware.vcloud.virtualHardwareVersion+xml">vmx-14</HardwareVersion>
+                <VmToolsVersion>11265</VmToolsVersion>
+                <VirtualCpuType>VM64</VirtualCpuType>
+                <TimeSyncWithHost>false</TimeSyncWithHost>
+            </VmSpecSection>
+            <VAppScopedLocalId>ec219a87-1cd2-4f46-96e2-59bc8252d931</VAppScopedLocalId>
+            <VdcComputePolicy href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcComputePolicies/urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" id="urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" name="PCD-Small-C2-M6" type="application/json"/>
+            <ComputePolicy>
+                <VmSizingPolicy href="https://pcdpre.beta.cloud.bt.com/cloudapi/1.0.0/vdcComputePolicies/urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" id="urn:vcloud:vdcComputePolicy:de1c82a1-f76e-4ce2-95b7-3ab9a9ffb98e" name="PCD-Small-C2-M6" type="application/json"/>
+                <VmSizingPolicyFinal>false</VmSizingPolicyFinal>
+            </ComputePolicy>
+            <DateCreated>2021-10-29T13:12:05.306+01:00</DateCreated>
+        </Vm>
+    </Children>
+    <ovf:NetworkSection xmlns:ns10="http://www.vmware.com/vcloud/v1.5" ns10:type="application/vnd.vmware.vcloud.networkSection+xml" ns10:href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/networkSection/">
+        <ovf:Info>The list of logical networks</ovf:Info>
+        <ovf:Network ovf:name="ORG_Routed_Network">
+            <ovf:Description></ovf:Description>
+        </ovf:Network>
+    </ovf:NetworkSection>
+    <NetworkConfigSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/networkConfigSection/" type="application/vnd.vmware.vcloud.networkConfigSection+xml" ovf:required="false">
+        <ovf:Info>The configuration parameters for logical networks</ovf:Info>
+        <NetworkConfig networkName="ORG_Routed_Network">
+            <Description></Description>
+            <Configuration>
+                <IpScopes>
+                    <IpScope>
+                        <IsInherited>true</IsInherited>
+                        <Gateway>192.168.0.1</Gateway>
+                        <Netmask>255.255.255.0</Netmask>
+                        <SubnetPrefixLength>24</SubnetPrefixLength>
+                        <Dns1>8.8.8.8</Dns1>
+                        <Dns2>8.8.4.4</Dns2>
+                        <IsEnabled>true</IsEnabled>
+                        <IpRanges>
+                            <IpRange>
+<StartAddress>192.168.0.10</StartAddress>
+<EndAddress>192.168.0.50</EndAddress>
+                            </IpRange>
+                        </IpRanges>
+                    </IpScope>
+                </IpScopes>
+                <ParentNetwork href="https://pcdpre.beta.cloud.bt.com/api/admin/network/dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" id="dba7edc5-64f9-45ba-a4a5-3f1db14e6f5f" name="ORG_Routed_Network"/>
+                <FenceMode>bridged</FenceMode>
+                <RetainNetInfoAcrossDeployments>false</RetainNetInfoAcrossDeployments>
+                <GuestVlanAllowed>false</GuestVlanAllowed>
+            </Configuration>
+            <IsDeployed>false</IsDeployed>
+        </NetworkConfig>
+    </NetworkConfigSection>
+    <LeaseSettingsSection href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+xml" ovf:required="false">
+        <ovf:Info>Lease settings section</ovf:Info>
+        <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+xml"/>
+        <Link rel="edit" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/leaseSettingsSection/" type="application/vnd.vmware.vcloud.leaseSettingsSection+json"/>
+        <StorageLeaseInSeconds>0</StorageLeaseInSeconds>
+    </LeaseSettingsSection>
+    <CustomizationSection goldMaster="false" href="https://pcdpre.beta.cloud.bt.com/api/vAppTemplate/vappTemplate-1ac4ad3b-b7f7-4506-8eb4-50b443238c77/customizationSection/" type="application/vnd.vmware.vcloud.customizationSection+xml" ovf:required="false">
+        <ovf:Info>VApp template customization section</ovf:Info>
+        <CustomizeOnInstantiate>true</CustomizeOnInstantiate>
+    </CustomizationSection>
+    <DateCreated>2021-10-29T13:12:05.306+01:00</DateCreated>
+</VAppTemplate>
+
+2021/11/09 14:24:39 [TRACE] Looking for networks:  --- 1
